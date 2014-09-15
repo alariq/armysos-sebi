@@ -99,9 +99,9 @@ public class MarkSync extends ActionBarActivity
 
     // used as test, in reality should read users marks file
     private String readMarks() {
-        // TODO: change it to bluetooth if run for real!!!!!!!!!!
-        String user =  //"Android-x86";
-                       BluetoothAdapter.getDefaultAdapter().getName();
+        // TODO: remove BluetoothAdapter if run on emulator or it will crash, emulator does not have Bluetooth!!!!!!!!!!
+        String user =  "Android-x86_N" + (int)(100.0*Math.random());
+                       //BluetoothAdapter.getDefaultAdapter().getName();
         String marks =
                 createMark("base1", user, UUID.randomUUID().toString(),  11.0467, 54.0021, "simple description") +  " \n" + // unique
                 // should create conflict, user can never be different if uuid is same, so we keep it same
