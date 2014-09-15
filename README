@@ -11,4 +11,15 @@ for writing:
 
 For examples of using amrks content provider refer to MarksBrowser demo app. I've added a lot of comments there. It is very easy.
 
+
+to get files:
+1) git clone git@github.com:alariq/armysos-sebi.git
+this will sync files and sreate armysos-sebi folder
+
+2) start Android Studio
+3) select Open Project
+4) point to armysos-sebi directory and click OK using mouse (Enter on directory, for some reason, will not open)
+5) do you stuff
+
+
 Have fun.
