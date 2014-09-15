@@ -22,4 +22,10 @@ this will sync files and sreate armysos-sebi folder
 5) do you stuff
 
 
+P.S. By default starting application will be MarkSync. To start MarkBrowser go to Run->Edit Configurations -> Activity -> Launch : and type:
+	com.uarmy.art.mark_provider.MarksBrowser
+or press '...' and start typeing MarkBrowser then select it from suggestion.
+
+
+
 Have fun.
