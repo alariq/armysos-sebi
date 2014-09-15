@@ -1,0 +1,4 @@
+This repo has several small projects:
+1) bt_sync - data agnostic app which transferes data over bluetooth.
+2) mark_sync - app which uses bt_sync to sync simple map marks.
+3) mark_provider - android content provider for marks storage along with simple demo app MarksBrowser.
