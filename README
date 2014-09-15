@@ -2,3 +2,13 @@ This repo has several small projects:
 1) bt_sync - data agnostic app which transferes data over bluetooth.
 2) mark_sync - app which uses bt_sync to sync simple map marks.
 3) mark_provider - android content provider for marks storage along with simple demo app MarksBrowser.
+
+To use mark_provider you need to also add <user-permissions>.
+For reading add: 
+	com.uarmy.art.mark_provider.provider.permission.READ_PROVIDER
+for writing:
+        com.uarmy.art.mark_provider.provider.permission.WRITE_PROVIDER
+
+For examples of using amrks content provider refer to MarksBrowser demo app. I've added a lot of comments there. It is very easy.
+
+Have fun.
