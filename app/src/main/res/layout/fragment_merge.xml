@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.uarmy.art.mark_sync.MergeFragment">
+
+    <Button
+        android:id="@+id/apply_merge_result_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_merge_result"
+        android:onClick="onApplyMergeResultBtn"
+        />
+
+    <ListView
+        android:id="@+id/merge_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+</LinearLayout>

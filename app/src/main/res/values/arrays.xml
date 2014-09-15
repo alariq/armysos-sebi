@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="popup_actions_array">
+        <item>@string/popup_view_mark</item>
+        <item>@string/popup_edit_mark</item>
+        <item>@string/popup_delete_mark</item>
+    </array>
+
+
+</resources>

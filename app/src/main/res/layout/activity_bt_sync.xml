@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".BtSync">
+
+    <TextView
+        android:id="@+id/pattern_txt"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/discover_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="discover"
+        android:onClick="onDiscoverBtn"
+        />
+
+    <Button android:id="@+id/discover_me_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="discover me"
+        android:layout_toRightOf= "@id/discover_btn"
+        android:onClick="onEnableDiscoverableBtn"
+        />
+
+    <Button android:id="@+id/start_server_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start server"
+        android:layout_below="@id/discover_btn"
+        android:onClick="onStartServerBtn"
+        />
+
+    <Button android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="return"
+        android:layout_below="@id/discover_btn"
+        android:layout_toRightOf= "@id/start_server_btn"
+        android:onClick="onReturnBtn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_server_btn"
+        android:text="STATUS"
+        android:textSize="20dp"
+        android:id="@+id/status"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/sync_progress"
+        android:layout_below="@id/status"
+        android:visibility="invisible"
+        />
+
+    <ListView
+        android:id="@+id/device_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sync_progress"
+      />
+
+
+</RelativeLayout>

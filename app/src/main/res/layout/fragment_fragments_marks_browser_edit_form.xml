@@ -1,0 +1,148 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uarmy.art.mark_provider.MarkFormEditFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|bottom">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_form_title"
+        android:id="@+id/mark_form_title"
+        android:editable="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:inputType="text"
+        android:id="@+id/mark_form_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lalala"
+        android:layout_below="@id/mark_form_title"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_form_desc"
+        android:id="@+id/mark_form_desc"
+        android:layout_below="@id/mark_form_title_content"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="some description"
+        android:id="@+id/mark_form_desc_content"
+        android:layout_below="@id/mark_form_desc"
+        android:textSize="25dp"
+        android:inputType="text|textMultiLine"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_form_pos"
+        android:id="@+id/mark_form_pos"
+        android:layout_below="@id/mark_form_desc_content"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mark_form_pos"
+        android:orientation="vertical"
+        android:id="@+id/mark_form_pos_layout">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/mark_form_pos_x"
+        android:inputType="number"
+        android:layout_gravity="left"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="2"
+        android:id="@+id/mark_form_pos_y"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="3"
+        android:id="@+id/mark_form_pos_h"
+        android:textSize="25dp"
+        />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mark_form_pos_layout"
+        android:id="@+id/mark_edit_form_apply_changes_btn"
+        android:text="@string/mark_edit_form_apply"
+        android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_form_owner"
+        android:id="@+id/mark_form_owner"
+        android:layout_below="@id/mark_edit_form_apply_changes_btn"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="some owner name"
+        android:id="@+id/mark_form_owner_content"
+        android:layout_below="@id/mark_form_owner"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_form_uuid"
+        android:id="@+id/mark_form_uuid"
+        android:layout_below="@id/mark_form_owner_content"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0xf45gmk5y3"
+        android:id="@+id/mark_form_uuid_content"
+        android:layout_below="@id/mark_form_uuid"
+        android:textSize="15dp"
+        />
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

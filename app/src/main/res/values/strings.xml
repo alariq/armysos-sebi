@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bt_sync</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_connecting">conecting …</string>
+    <string name="title_connected_to">connected to </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="title_listen">listening</string>
+    <string name="send">SEND</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_activity_mark_sync">MarkSync</string>
+    <string name="own_marks_txt">Own Marks:</string>
+    <string name="new_marks_txt">New Marks:</string>
+    <string name="conflict_marks_txt">Conflict Marks:</string>
+    <string name="sync">SYNC</string>
+    <string name="action_sync">Sync</string>
+    <string name="my_tab">MY</string>
+    <string name="new_tab">NEW</string>
+    <string name="conflicts_tab">CONFLICTS</string>
+    <string name="location_changed_status">XY</string>
+    <string name="title_changed_status">TITLE</string>
+    <string name="desc_changed_status">DESCRIPTION</string>
+    <string name="apply_merge_result">APPLY MERGE RESULT</string>
+    <string name="action_apply_merge_results">Apply sync</string>
+    <string name="conflicts_are_not_resolved">Conflicts are not resolved. Go to CONFLICTS tab and resolve them.</string>
+    <string name="please_apply_sync_results">Please apply sync results (use button or menu) before doing another sync</string>
+    <string name="resolve_succeeded">Resolve succeeded! :-)</string>
+    <string name="resolve_failed">Something went wrong during resolve. Try sync and resolve again.</string>
+    <string name="action_cancel_sync_results">Revert sync</string>
+    <string name="title_activity_marks_browser">MarksBrowser</string>
+
+    <string name="mark_form_title">Title:</string>
+    <string name="mark_form_desc">Description:</string>
+    <string name="mark_form_pos">Position:</string>
+    <string name="mark_form_owner">Owner:</string>
+    <string name="mark_form_uuid">UUID:</string>
+    <string name="mark_edit_form_apply">Apply</string>
+    <string name="action_add_new_mark">new</string>
+
+
+    <string name="mark_browser_popup_menu_title">select action</string>
+    <string name="popup_edit_mark">edit</string>
+    <string name="popup_view_mark">view</string>
+    <string name="popup_delete_mark">delete</string>
+
+</resources>

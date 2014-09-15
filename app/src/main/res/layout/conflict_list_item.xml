@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:textSize="16dp"
+            android:text="Simple description of a mark" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/desc">
+
+    <TextView
+        android:id="@+id/location_changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:textSize="10dp"
+        android:background="#aaaa22"
+        android:text="@string/location_changed_status" />
+
+    <TextView
+        android:id="@+id/desc_changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:layout_toEndOf="@id/location_changed"
+        android:paddingLeft="5px"
+        android:textSize="10dp"
+        android:background="#7777cc"
+        android:text="@string/desc_changed_status" />
+
+    <TextView
+        android:id="@+id/title_changed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:layout_toEndOf="@id/desc_changed"
+        android:paddingLeft="5px"
+        android:textSize="10dp"
+        android:background="#22aa22"
+        android:text="@string/title_changed_status" />
+
+    </LinearLayout>>
+</RelativeLayout>
